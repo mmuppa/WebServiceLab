@@ -33,7 +33,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_add_user) {
+            AddUserFragment addUserFragment = new AddUserFragment();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, addUserFragment)
+                    .addToBackStack(null)
+                    .commit();
+
             return true;
         }
 

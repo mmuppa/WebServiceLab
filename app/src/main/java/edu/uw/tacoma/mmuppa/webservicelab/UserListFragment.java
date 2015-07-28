@@ -148,9 +148,7 @@ public class UserListFragment extends ListFragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            //mList.clear();
-            //mArrayAdapter.clear();
-            // Parse JSON
+            //Parse JSON
             try {
                 mList.clear();
                 UserInfo.ITEMS.clear();
