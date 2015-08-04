@@ -7,20 +7,19 @@
 
     <EditText
         android:id="@+id/email_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/EditTextStyle"
         android:inputType="textEmailAddress"
         android:hint="@string/email_hint" />
 
     <EditText
         android:id="@+id/pwd_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/EditTextStyle"
         android:inputType="textPassword"
         android:hint="@string/pwd_hint" />
 
     <Button
         android:id="@+id/add_user_button"
+        style="?android:attr/buttonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
